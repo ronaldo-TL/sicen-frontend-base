@@ -18,3 +18,5 @@ const config: configurarPropiedades = {
 };
 
 export default config;
+
+
