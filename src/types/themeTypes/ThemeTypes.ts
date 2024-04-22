@@ -1,8 +1,8 @@
 type temaTypes = {
-  nombre:           string;
-  oscuro:           boolean;
+  name:           string;
+  dark:           boolean;
   variables?:       object;
-  colores: {
+  colors: {
     primary?:         string;
     secondary?:       string;
     info?:            string;
