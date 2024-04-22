@@ -13,10 +13,18 @@
         rounded="0" 
         group>
 
-          <v-btn :value="false" variant="text" elevation="9" class="rounded-md">
+          <v-btn 
+            :value="false" 
+            variant="text" 
+            elevation="9" 
+            class="rounded-md">
             <LayoutColumnsIcon stroke-width="1.5" size="21" class="mr-2 icon" /> Vertical
           </v-btn>
-          <v-btn :value="true" variant="text" elevation="9" class="rounded-md">
+          <v-btn 
+            :value="true" 
+            variant="text" 
+            elevation="9" 
+            class="rounded-md">
             <LayoutNavbarIcon stroke-width="1.5" size="21" class="mr-2 icon" /> Horizontal
           </v-btn>
 
@@ -65,7 +73,12 @@
 
 
       <h6 class="text-h6 mt-11 mb-2">Contenedor Opciones</h6>
-        <v-btn-toggle v-model="personalizador.enCaja" color="primary" class="my-2 btn-group-custom gap-3" rounded="0" group>
+        <v-btn-toggle 
+          v-model="personalizador.enCaja" 
+          color="primary" 
+          class="my-2 btn-group-custom gap-3" 
+          rounded="0" 
+          group>
           <v-btn :value="true" variant="text" elevation="9" class="rounded-md">
             <LayoutDistributeVerticalIcon stroke-width="1.5" size="21" class="mr-2 icon" />
             Boxed
@@ -79,7 +92,12 @@
 
         <v-sheet v-if="personalizador.setDisenioHorizontal != true">
           <h6 class="text-h6 mt-11 mb-2">Sidebar Type</h6>
-          <v-btn-toggle v-model="personalizador.minimizarBarraLateral" color="primary" class="my-2 btn-group-custom gap-3" rounded="0" group>
+          <v-btn-toggle 
+            v-model="personalizador.minimizarBarraLateral" 
+            color="primary" 
+            class="my-2 btn-group-custom gap-3" 
+            rounded="0" 
+            group>
             <v-btn :value="false" variant="text" elevation="9" class="rounded-md">
               <LayoutSidebarIcon stroke-width="1.5" size="21" class="mr-2 icon" />
               Full
@@ -91,17 +109,22 @@
           </v-btn-toggle>
         </v-sheet>
 
-                <h6 class="text-h6 mt-11 mb-2">Card with</h6>
-                <v-btn-toggle v-model="personalizador.setBordeDeLaTarjeta" color="primary" class="my-2 btn-group-custom gap-3" rounded="0" group>
-                    <v-btn :value="false" variant="text" elevation="9" class="rounded-md">
-                        <LayoutSidebarLeftCollapseIcon stroke-width="1.5" size="21" class="mr-2 icon" />
-                        Shadow
-                    </v-btn>
-                    <v-btn :value="true" variant="text" elevation="9" class="rounded-md">
-                        <LayoutSidebarIcon stroke-width="1.5" size="21" class="mr-2 icon" />
-                        Border
-                    </v-btn>
-                </v-btn-toggle>
+        <h6 class="text-h6 mt-11 mb-2">Card with</h6>
+        <v-btn-toggle 
+          v-model="personalizador.setBordeDeLaTarjeta" 
+          color="primary" 
+          class="my-2 btn-group-custom gap-3" 
+          rounded="0" 
+          group>
+          <v-btn :value="false" variant="text" elevation="9" class="rounded-md">
+            <LayoutSidebarLeftCollapseIcon stroke-width="1.5" size="21" class="mr-2 icon" />
+            Shadow
+          </v-btn>
+          <v-btn :value="true" variant="text" elevation="9" class="rounded-md">
+            <LayoutSidebarIcon stroke-width="1.5" size="21" class="mr-2 icon" />
+            Border
+          </v-btn>
+        </v-btn-toggle>
 
     </div>
   </perfect-scrollbar>

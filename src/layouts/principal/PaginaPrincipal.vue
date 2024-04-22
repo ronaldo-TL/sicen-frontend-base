@@ -19,8 +19,8 @@
           width="320">
             <Personalizador />
         </v-navigation-drawer>
-        <!-- <VerticalSidebarVue v-if="!personalizador.setHorizontalLayout" />
-        <VerticalHeaderVue v-if="!personalizador.setHorizontalLayout" /> -->
+       <VerticalSidebar v-if="personalizador.setDisenioHorizontal" />
+        <!-- <VerticalHeaderVue v-if="!personalizador.setHorizontalLayout" />  -->
         <HorizontalHeader v-if="personalizador.setDisenioHorizontal" />
         <!-- <HorizontalSidebar v-if="personalizador.setHorizontalLayout" /> -->
         <v-main>
@@ -48,6 +48,7 @@
 import { RouterView } from 'vue-router';
 import { usePersonalizarStore } from '../../stores/personalizador';
 import HorizontalHeader from "./horizontal-header/HorizontalHeader.vue";
+import VerticalSidebar from "./vertical-sidebar/VerticalSidebar.vue";
 import Personalizador from './personalizador/Personalizador.vue';
 
 const personalizador = usePersonalizarStore()

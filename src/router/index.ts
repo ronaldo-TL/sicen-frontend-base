@@ -7,7 +7,7 @@ const routes = [
     },
     {
         path: '/about1',
-        component: () => import('@/components/Prueva1.vue')
+        component: () => import('@/layouts/principal/vertical-sidebar/VerticalSidebar.vue')
     },
     {
         path: '/about2',
