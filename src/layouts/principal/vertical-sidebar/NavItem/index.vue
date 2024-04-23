@@ -5,7 +5,7 @@ const props = defineProps({ item: Object, level: Number });
 </script>
 
 <template>
-    <!---Single Item-->
+
     <v-list-item
         :to="item.type === 'external' ? '' : item.to"
         :href="item.type === 'external' ? item.to : ''"

@@ -16,10 +16,7 @@
         </div>
         </v-locale-provider>
 
-        
-        <!-- ---------------------------------------------- -->
-        <!---Navigation -->
-        <!-- ---------------------------------------------- -->
+
         <perfect-scrollbar class="scrollnavbar">
             <v-list class="pa-6">
           

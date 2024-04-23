@@ -71,7 +71,7 @@ export interface menu {
   subCaption?: string;
 }
 
-const sidebarItem: menu[] = [
+const sidebarItems: menu[] = [
   { header: 'APLICACIONES' },
   {
     title: 'Componente Prueba',
@@ -86,6 +86,23 @@ const sidebarItem: menu[] = [
     icon: ShoppingCartIcon,
     to: '/about2'
   },
+  {
+    title: 'Blog',
+    icon: ChartDonut3Icon,
+    to: '/about1',
+    children: [
+        {
+            title: 'PostSDs',
+            icon: PointIcon,
+            to: '/about1'
+        },
+        {
+            title: 'Detail',
+            icon: PointIcon,
+            to: '/about2'
+        }
+    ]
+},
 ]
 
-export default sidebarItem;
+export default sidebarItems;
