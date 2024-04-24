@@ -9,7 +9,6 @@
               personalizador.setBordeDeLaTarjeta ? 'cardBordered' : ''
           ]"
       >
-        <!---Customizer location right side--->
         <v-navigation-drawer 
           app 
           temporary 

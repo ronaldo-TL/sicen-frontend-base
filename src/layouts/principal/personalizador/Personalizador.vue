@@ -5,7 +5,7 @@
   <v-divider></v-divider>
   <perfect-scrollbar style="height: calc(100vh - 90px)">
     <div class="pa-6">
-      <h6 class="text-h6 mb-2">Herramienta de diseño</h6>
+      <h6 class="text-h6 mb-2">Herramientas de diseño</h6>
       <v-btn-toggle 
         v-model="personalizador.setDisenioHorizontal" 
         color="primary" 
@@ -18,14 +18,20 @@
             variant="text" 
             elevation="9" 
             class="rounded-md">
-            <LayoutColumnsIcon stroke-width="1.5" size="21" class="mr-2 icon" /> Vertical
+            <LayoutColumnsIcon 
+              stroke-width="1.5" 
+              size="21" 
+              class="mr-2 icon" /> Vertical
           </v-btn>
           <v-btn 
             :value="true" 
             variant="text" 
             elevation="9" 
             class="rounded-md">
-            <LayoutNavbarIcon stroke-width="1.5" size="21" class="mr-2 icon" /> Horizontal
+            <LayoutNavbarIcon 
+              stroke-width="1.5" 
+              size="21" 
+              class="mr-2 icon" /> Horizontal
           </v-btn>
 
       </v-btn-toggle>
@@ -55,6 +61,7 @@
 
       <h6 class="text-h6 mt-11 mb-5">Tema Diseño Oscuro</h6>
       <v-item-group mandatory v-model="personalizador.accionDelTema" class="ml-n2 v-row">
+
         <v-col cols="4" v-for="tema in temaColoresOscuros" :key="tema.nombre" class="pa-2">
           <v-item v-slot="{ isSelected, toggle }" :value="tema.nombre">
             <v-sheet
@@ -69,6 +76,7 @@
             </v-sheet>
           </v-item>
         </v-col>
+        
       </v-item-group>
 
 
@@ -148,7 +156,6 @@ import {
 const tema = useTheme();
 const personalizador = usePersonalizarStore();
 
-// themes color options
 const temaColores = ref([
   {
     nombre: 'BLUE_THEME',
@@ -160,7 +167,6 @@ const temaColores = ref([
   }
 ])
 
-// Dark Theme Colors
 const temaColoresOscuros = ref([
   { 
     nombre: 'DARK_BLUE_THEME', 

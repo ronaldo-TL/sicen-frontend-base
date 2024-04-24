@@ -11,9 +11,9 @@
     >
 
         <v-locale-provider>
-        <div class="pa-5">
-            <Logo />
-        </div>
+            <div class="pa-5">
+                <Logo />
+            </div>
         </v-locale-provider>
 
 
@@ -22,12 +22,22 @@
           
                 <template v-for="(item, i) in menuBarraLateral">
              
-                    <NavGroup :item="item" v-if="item.header" :key="item.title" />
+                    <NavGroup 
+                        :item="item" 
+                        v-if="item.header" 
+                        :key="item.title" />
               
-                    <NavCollapse class="leftPadding" :item="item" :level="0" v-else-if="item.children" />
+                    <NavCollapse 
+                        class="leftPadding" 
+                        :item="item" 
+                        :level="0" 
+                        v-else-if="item.children" />
                
-                    <NavItem :item="item" v-else class="leftPadding" />
-      
+                    <NavItem 
+                        :item="item" 
+                        v-else 
+                        class="leftPadding" />
+        
                 </template>
             </v-list>
             <!-- <div class="pa-6 userbottom">
