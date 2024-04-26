@@ -79,14 +79,30 @@ const sidebarItems: menu[] = [
     // chip: 'New',
     // chipColor: 'surface',
     chipBgColor: 'secondary',
-    to: '/dashboards/prueba1'
+    to: '/dashboards/principal'
   },
   {
     title: 'Sistemas',
     icon: LayoutIcon,
-    to: '/dashboards/prueba2'
+    to: '/dashboards/prueba1'
   },
   {
+    title: 'Usuarios',
+    icon: UserCircleIcon,
+    to: '/dashboards/prueba1'
+  },
+  {
+    title: 'Roles',
+    icon: JumpRopeIcon,
+    to: '/dashboards/prueba1'
+  },
+  {
+    title: 'Parametros',
+    icon: ServerIcon,
+    to: '/dashboards/prueba1'
+  },
+  { header: 'HERRAMIENTAS' },
+  { 
     title: 'Herramientas',
     icon: ChartDonut3Icon,
     to: '/',
@@ -94,7 +110,7 @@ const sidebarItems: menu[] = [
         {
             title: 'Registro Matriculas',
             icon: ChartDonut3Icon,
-            to: '/dashboards/prueba1'
+            to: '/dashboards/prueba2'
         },
         {
             title: 'Detail',

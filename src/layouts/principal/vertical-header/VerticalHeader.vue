@@ -25,15 +25,17 @@
         <v-sheet>
             <Buscador />
         </v-sheet>
+
+        <h3>SICEN</h3>
         <!-- <div class="hidden-md-and-down">
             <Navigations />
         </div> -->
         <v-spacer />
         <DDLenguaje />
 
-        <v-btn icon variant="text" color="primary" to="/ecommerce/checkout">
+        <v-btn icon variant="text" color="primary" to="/dashboards/prueba2">
             <v-badge  color="error">
-                <ShoppingCartIcon stroke-width="1.5" size="22" />
+                <GridDotsIcon stroke-width="1.5" size="22" />
             </v-badge>
         </v-btn>
         <v-btn

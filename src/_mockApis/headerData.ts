@@ -51,8 +51,12 @@ const DDLenguaje: lenguajeType[] = [
 
 const buscarSugerencia: buscarType[] = [
     {
-        titulo: 'Index',
-        href: '/about'
+        titulo: 'Principal',
+        href: '/dashboards/principal'
+    },
+    {
+        titulo: 'Pureba1',
+        href: '/dashboards/prueba1'
     },
 ];
 

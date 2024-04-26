@@ -4,14 +4,20 @@ const MainRoutes = {
     requiresAuth: true,
 
   },
-  redirect: '/dashboards/prueba1',
+  redirect: '/dashboards/principal',
   component: () => import('@/layouts/principal/PaginaPrincipal.vue'),
   children: [
+
+    {
+      name: 'dashboard',
+      path: '/dashboards/principal',
+      component: () => import('@/views/principal/index.vue')
+    },
     {
       name: 'Prueba1',
       path: '/dashboards/prueba1',
       component: () => import('@/views/dashboard/Prueba1.vue')
-    },
+    },    
     {
       name: 'Prueba2',
       path: '/dashboards/prueba2',
