@@ -74,35 +74,35 @@ export interface menu {
 const sidebarItems: menu[] = [
   { header: 'APLICACIONES' },
   {
-    title: 'Componente Prueba',
-    icon: ApertureIcon,
-    chip: 'New',
-    chipColor: 'surface',
+    title: 'Dashboard',
+    icon: AppsIcon,
+    // chip: 'New',
+    // chipColor: 'surface',
     chipBgColor: 'secondary',
-    to: '/about1'
+    to: '/dashboards/prueba1'
   },
   {
-    title: 'Hello World',
-    icon: ShoppingCartIcon,
-    to: '/about2'
+    title: 'Sistemas',
+    icon: LayoutIcon,
+    to: '/dashboards/prueba2'
   },
   {
-    title: 'Blog',
+    title: 'Herramientas',
     icon: ChartDonut3Icon,
-    to: '/about1',
+    to: '/',
     children: [
         {
-            title: 'PostSDs',
-            icon: PointIcon,
-            to: '/about1'
+            title: 'Registro Matriculas',
+            icon: ChartDonut3Icon,
+            to: '/dashboards/prueba1'
         },
         {
             title: 'Detail',
-            icon: PointIcon,
-            to: '/about2'
+            icon: ChartDonut3Icon,
+            to: '/dashboards/prueba3'
         }
     ]
-},
+  },
 ]
 
 export default sidebarItems;

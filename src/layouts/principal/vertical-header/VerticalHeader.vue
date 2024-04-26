@@ -1,32 +1,3 @@
-<script setup lang="ts">
-import { ref, watch, computed } from 'vue';
-import { usePersonalizarStore } from '../../../stores/personalizador';
-import { GridDotsIcon, LanguageIcon, SearchIcon, Menu2Icon, BellRingingIcon, ShoppingCartIcon } from 'vue-tabler-icons';
-import LanguageDD from './LanguageDD.vue';
-import NotificationDD from './NotificationDD.vue';
-import ProfileDD from './ProfileDD.vue';
-import Searchbar from './Searchbar.vue';
-import RightMobileSidebar from './RightMobileSidebar.vue';
-import Navigations from './Navigations.vue';
-
-const personalizador = usePersonalizarStore();
-const showSearch = ref(false);
-const appsdrawer = ref(false);
-const priority = ref(personalizador.setDisenioHorizontal ? 0 : 0);
-function searchbox() {
-    showSearch.value = !showSearch.value;
-}
-watch(priority, (newPriority) => {
-    priority.value = newPriority;
-});
-
-// count items
-// const store = useEcomStore();
-// const getCart = computed(() => {
-//     return store.cart;
-// });
-</script>
-
 <template>
     <v-app-bar elevation="0" :priority="priority" height="70" class="">
         <v-btn
@@ -51,47 +22,20 @@ watch(priority, (newPriority) => {
             <Searchbar :closesearch="searchbox" />
         </v-sheet> -->
 
-        <!-- ---------------------------------------------- -->
-        <!-- Search part -->
-        <!-- ---------------------------------------------- -->
         <v-sheet>
-            <Searchbar />
+            <Buscador />
         </v-sheet>
-
-        <!---/Search part -->
-
-        <!-- ---------------------------------------------- -->
-        <!-- Mega menu -->
-        <!-- ---------------------------------------------- -->
-        <div class="hidden-md-and-down">
+        <!-- <div class="hidden-md-and-down">
             <Navigations />
-        </div>
+        </div> -->
         <v-spacer />
-        <!-- ---------------------------------------------- -->
-        <!---right part -->
-        <!-- ---------------------------------------------- -->
-        <!-- ---------------------------------------------- -->
-        <!-- translate -->
-        <!-- ---------------------------------------------- -->
-        <LanguageDD />
+        <DDLenguaje />
 
-        
-
-        <!-- ---------------------------------------------- -->
-        <!-- ShoppingCart -->
-        <!-- ---------------------------------------------- -->
         <v-btn icon variant="text" color="primary" to="/ecommerce/checkout">
             <v-badge  color="error">
                 <ShoppingCartIcon stroke-width="1.5" size="22" />
             </v-badge>
         </v-btn>
-
-        <!-- ---------------------------------------------- -->
-        <!-- Notification -->
-        <!-- ---------------------------------------------- -->
-        <NotificationDD />
-
-        <!-- right sidebar -->
         <v-btn
             variant="text"
             color="primary"
@@ -101,19 +45,34 @@ watch(priority, (newPriority) => {
         >
             <GridDotsIcon size="17" stroke-width="1.5" />
         </v-btn>
-
-        <!-- ---------------------------------------------- -->
-        <!-- User Profile -->
-        <!-- ---------------------------------------------- -->
         <div class="ml-2">
-            <ProfileDD />
+            <DDPerfil />
         </div>
     </v-app-bar>
-
-    <!-- ---------------------------------------------- -->
-    <!-- Right Sidebar -->
-    <!-- ---------------------------------------------- -->
     <v-navigation-drawer v-model="appsdrawer" location="right" temporary>
         <RightMobileSidebar />
     </v-navigation-drawer>
 </template>
+
+
+<script setup lang="ts">
+import { ref, watch, computed } from 'vue';
+import { usePersonalizarStore } from '../../../stores/personalizador';
+import { GridDotsIcon, LanguageIcon, SearchIcon, Menu2Icon, BellRingingIcon, ShoppingCartIcon } from 'vue-tabler-icons';
+import DDPerfil from './DDPerfil.vue';
+import Buscador from './Buscador.vue';
+import RightMobileSidebar from './RightMobileSidebar.vue';
+import DDLenguaje from './DDLenguaje.vue';
+
+const personalizador = usePersonalizarStore();
+const showSearch = ref(false);
+const appsdrawer = ref(false);
+const priority = ref(personalizador.setDisenioHorizontal ? 0 : 0);
+function searchbox() {
+    showSearch.value = !showSearch.value;
+}
+watch(priority, (newPriority) => {
+    priority.value = newPriority;
+});
+
+</script>

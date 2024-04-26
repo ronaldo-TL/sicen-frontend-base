@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { AppsIcon, CalendarIcon, MailIcon, MessagesIcon } from 'vue-tabler-icons';
-import AppsLink from './AppsLink.vue';
-import QuickLinks from './QuickLinks.vue';
+// import AppsLink from './AppsLink.vue';
+// import QuickLinks from './QuickLinks.vue';
 
 const open = ref(['Apps']);
 </script>
@@ -22,7 +22,7 @@ const open = ref(['Apps']);
                 </template>
                 <v-list-item class="pl-6 pb-6">
                     <div>
-                        <AppsLink />
+                        <!-- <AppsLink /> -->
                     </div>
                 </v-list-item>
             </v-list-group>
@@ -47,7 +47,7 @@ const open = ref(['Apps']);
         </v-list>
         <div class="px-5">
             <h5 class="text-h5 my-4">Quick Links</h5>
-            <QuickLinks />
+            <!-- <QuickLinks /> -->
         </div>
     </div>
 </template>

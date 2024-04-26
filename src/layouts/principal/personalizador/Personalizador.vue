@@ -5,7 +5,7 @@
   <v-divider></v-divider>
   <perfect-scrollbar style="height: calc(100vh - 90px)">
     <div class="pa-6">
-      <h6 class="text-h6 mb-2">Herramientas de diseño</h6>
+      <!-- <h6 class="text-h6 mb-2">Herramientas de diseño</h6>
       <v-btn-toggle 
         v-model="personalizador.setDisenioHorizontal" 
         color="primary" 
@@ -34,9 +34,9 @@
               class="mr-2 icon" /> Horizontal
           </v-btn>
 
-      </v-btn-toggle>
+      </v-btn-toggle> -->
 
-      <h6 class="text-h6 mt-8 mb-5">Tema Diseño Claro</h6>
+      <h6 class="text-h6 mt-8 mb-5">Tema Claro</h6>
       <v-item-group 
         mandatory 
         v-model="personalizador.accionDelTema" 
@@ -59,7 +59,7 @@
 
       </v-item-group>
 
-      <h6 class="text-h6 mt-11 mb-5">Tema Diseño Oscuro</h6>
+      <h6 class="text-h6 mt-11 mb-5">Tema Oscuro</h6>
       <v-item-group mandatory v-model="personalizador.accionDelTema" class="ml-n2 v-row">
 
         <v-col cols="4" v-for="tema in temaColoresOscuros" :key="tema.nombre" class="pa-2">
@@ -80,7 +80,7 @@
       </v-item-group>
 
 
-      <h6 class="text-h6 mt-11 mb-2">Contenedor Opciones</h6>
+      <h6 class="text-h6 mt-11 mb-2">Borde del Contenedor</h6>
         <v-btn-toggle 
           v-model="personalizador.enCaja" 
           color="primary" 
@@ -89,17 +89,17 @@
           group>
           <v-btn :value="true" variant="text" elevation="9" class="rounded-md">
             <LayoutDistributeVerticalIcon stroke-width="1.5" size="21" class="mr-2 icon" />
-            Boxed
+            En caja
           </v-btn>
           <v-btn :value="false" variant="text" elevation="9" class="rounded-md ">
             <LayoutDistributeHorizontalIcon stroke-width="1.5" size="21" class="mr-2 icon" />
-            Full
+            Completo
           </v-btn>
         </v-btn-toggle>
 
 
         <v-sheet v-if="personalizador.setDisenioHorizontal != true">
-          <h6 class="text-h6 mt-11 mb-2">Sidebar Type</h6>
+          <h6 class="text-h6 mt-11 mb-2">Estilo del menu lateral</h6>
           <v-btn-toggle 
             v-model="personalizador.minimizarBarraLateral" 
             color="primary" 
@@ -108,16 +108,16 @@
             group>
             <v-btn :value="false" variant="text" elevation="9" class="rounded-md">
               <LayoutSidebarIcon stroke-width="1.5" size="21" class="mr-2 icon" />
-              Full
+              Completo
             </v-btn>
             <v-btn :value="true" variant="text" elevation="9" class="rounded-md">
               <LayoutSidebarLeftCollapseIcon stroke-width="1.5" size="21" class="mr-2 icon" />
-              Collapse
+              Iconos
             </v-btn>
           </v-btn-toggle>
         </v-sheet>
 
-        <h6 class="text-h6 mt-11 mb-2">Card with</h6>
+        <!-- <h6 class="text-h6 mt-11 mb-2">Card with</h6>
         <v-btn-toggle 
           v-model="personalizador.setBordeDeLaTarjeta" 
           color="primary" 
@@ -132,7 +132,7 @@
             <LayoutSidebarIcon stroke-width="1.5" size="21" class="mr-2 icon" />
             Border
           </v-btn>
-        </v-btn-toggle>
+        </v-btn-toggle> -->
 
     </div>
   </perfect-scrollbar>

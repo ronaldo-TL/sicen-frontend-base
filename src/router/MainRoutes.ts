@@ -1,0 +1,28 @@
+const MainRoutes = {
+  path: '/',
+  meta: {
+    requiresAuth: true,
+
+  },
+  redirect: '/dashboards/prueba1',
+  component: () => import('@/layouts/principal/PaginaPrincipal.vue'),
+  children: [
+    {
+      name: 'Prueba1',
+      path: '/dashboards/prueba1',
+      component: () => import('@/views/dashboard/Prueba1.vue')
+    },
+    {
+      name: 'Prueba2',
+      path: '/dashboards/prueba2',
+      component: () => import('@/views/dashboard/Prueba2.vue')
+    },
+    {
+      name: 'Prueba3',
+      path: '/dashboards/prueba3',
+      component: () => import('@/views/dashboard/Prueba3.vue')
+    }
+  ]
+}
+
+export default MainRoutes;

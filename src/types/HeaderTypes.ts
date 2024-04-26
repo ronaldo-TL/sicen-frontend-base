@@ -1,27 +1,33 @@
 
 
 type notificacionType = {
-  imagen:       string
+  avatar:       string
   titulo:       string
   subtitulo:    string
 }
 
 type perfilType = {
-  imagen:     string
+  avatar:     string
   titulo:     string
   subtitulo:  string
   href:       string
 }
 
 type lenguajeType = {
-  imagen:     string
+  avatar:     string
   titulo:     string
   subtexto:   string
   valor:      string
 }
 
+type buscarType = {
+  titulo: string;
+  href: string;
+};
+
 export type {
   notificacionType,
   perfilType,
-  lenguajeType
+  lenguajeType,
+  buscarType
 }

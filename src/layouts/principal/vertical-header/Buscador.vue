@@ -14,7 +14,7 @@ import { buscarSugerencia } from '@/_mockApis/headerData';
         </template>
         <v-sheet width="360" elevation="10" rounded="md">
             <div class="d-flex align-center justify-space-between pa-5">
-                <v-text-field placeholder="Buscar" color="primary" density="compact" variant="outlined" hide-details></v-text-field>
+                <v-text-field placeholder="Search" color="primary" density="compact" variant="outlined" hide-details></v-text-field>
             </div>
             <v-divider></v-divider>
             <h5 class="text-h5 mt-4 px-5 pb-4">Enlases rapidos</h5>

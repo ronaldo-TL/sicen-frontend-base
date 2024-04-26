@@ -19,7 +19,7 @@
             <Personalizador />
         </v-navigation-drawer>
        <VerticalSidebar v-if="!personalizador.setDisenioHorizontal" />
-        <!-- <VerticalHeader v-if="!personalizador.setDisenioHorizontal" />  -->
+        <VerticalHeader v-if="!personalizador.setDisenioHorizontal" /> 
         <!-- <HorizontalHeader v-if="personalizador.setDisenioHorizontal" /> -->
         <!-- <HorizontalSidebar v-if="personalizador.setHorizontalLayout" /> -->
         <v-main>
@@ -27,7 +27,7 @@
             <div :class="personalizador.enCaja ? 'maxWidth' : ''">
               <RouterView />
               <v-btn
-                class="personalizador-btn"
+                class="customizer-btn"
                 size="large"
                 icon
                 variant="flat"
@@ -42,12 +42,13 @@
       </v-app>
     </v-locale-provider>
   <HorizontalHeader v-if="personalizador.setDisenioHorizontal" />
+  
 </template>
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
 import { usePersonalizarStore } from '../../stores/personalizador';
 import HorizontalHeader from "./horizontal-header/HorizontalHeader.vue";
-// import VerticalHeader from "./vertical-header/VerticalHeader.vue";
+import VerticalHeader from "./vertical-header/VerticalHeader.vue";
 import VerticalSidebar from "./vertical-sidebar/VerticalSidebar.vue";
 import Personalizador from './personalizador/Personalizador.vue';
 

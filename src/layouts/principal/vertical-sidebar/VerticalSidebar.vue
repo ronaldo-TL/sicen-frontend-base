@@ -1,4 +1,4 @@
-<template>
+<template >
     <v-navigation-drawer
         left
         v-model="personalizador.cajaBarraLateral"
@@ -7,17 +7,21 @@
         app
         class="leftSidebar"
         :rail="personalizador.minimizarBarraLateral"
-        expand-on-hover width="270"
+        expand-on-hover 
+        width="270"
     >
-
-        <v-locale-provider>
-            <div class="pa-5">
-                <Logo />
+            <div class="pa-20 d-flex justify-center" style="margin-top: 20px;">
+                <v-locale-provider>
+                    <div>
+                        <v-img :src="logo" width="120" height="auto"></v-img>
+                    </div>
+                </v-locale-provider> 
             </div>
-        </v-locale-provider>
+               
 
+            
+            <perfect-scrollbar class="scrollnavbar">
 
-        <perfect-scrollbar class="scrollnavbar">
             <v-list class="pa-6">
           
                 <template v-for="(item, i) in menuBarraLateral">
@@ -57,7 +61,7 @@ import NavGroup from './NavGroup/index.vue';
 import NavItem from './NavItem/index.vue';
 import NavCollapse from './NavCollapse/NavCollapse.vue';
 import Logo from '../logo/Logo.vue';
-
+import logo from "@/assets/images/logos/logoMjti.png";
 const personalizador = usePersonalizarStore();
 const menuBarraLateral = shallowRef(sidebarItems);
 </script>

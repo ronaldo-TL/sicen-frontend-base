@@ -6,7 +6,7 @@
       <template v-slot:prepend>
         <Icon :item="item.icon" :level="level" />
       </template>
-
+      
       <v-list-item-title 
         class="mr-auto">
         {{ $t(item.title) }}
@@ -17,6 +17,8 @@
         class="text-caption mt-n1 hide-menu">
         {{ item.subCaption }}
       </v-list-item-subtitle>
+
+      
     </v-list-item>
   </template>
 
