@@ -8,18 +8,25 @@ const authStore = useAuthStore();
 </script>
 
 <template>
-    <!-- ---------------------------------------------- -->
-    <!-- notifications DD -->
-    <!-- ---------------------------------------------- -->
     <v-menu :close-on-content-click="false">
         <template v-slot:activator="{ props }">
-            <v-btn class="custom-hover-primary" variant="text" v-bind="props" icon>
+            <v-btn 
+                class="custom-hover-primary" 
+                variant="text"
+                v-bind="props" 
+                icon>
                 <v-avatar size="35">
-                    <img src="@/assets/images/profile/user-1.jpg" width="35" alt="Julia" />
+                    <img 
+                        src="@/assets/images/profile/user-1.jpg" 
+                        width="35" 
+                        alt="Julia" />
                 </v-avatar>
             </v-btn>
         </template>
-        <v-sheet rounded="md" width="360" elevation="10">
+        <v-sheet 
+            rounded="md" 
+            width="360" 
+            elevation="10">
             <div class="px-8 pt-6">
                 <h6 class="text-h5 font-weight-medium">Perfil Usuario</h6>
                 <div class="d-flex align-center mt-4 pb-6">

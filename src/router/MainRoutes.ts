@@ -1,10 +1,9 @@
 const MainRoutes = {
-  path: '/',
+  path: '/main',
   meta: {
     requiresAuth: true,
-
-  },
-  redirect: '/dashboards/principal',
+  },  
+  redirect: '/main',
   component: () => import('@/layouts/principal/PaginaPrincipal.vue'),
   children: [
 

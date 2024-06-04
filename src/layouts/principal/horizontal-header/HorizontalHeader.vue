@@ -24,7 +24,13 @@
     <Menu2Icon size="20" stroke-width="1.5" />
   </v-btn>
 
-  <v-btn class="hidden-lg-and-up ml-3" icon rounded="sm" variant="flat" size="small" @click="cajaDeBusqueda">
+  <v-btn 
+    class="hidden-lg-and-up ml-3" 
+    icon 
+    rounded="sm"
+    variant="flat" 
+    size="small" 
+    @click="cajaDeBusqueda">
     <SearchIcon size="17" stroke-width="1.5" />
   </v-btn>
   <v-sheet v-if="mostrarBuscar" class="search-sheet v-col-12">
@@ -47,6 +53,7 @@ const mostrarBuscar = ref(false);
 const caja = ref(false);
 const appsCaja = ref(false);
 const prioridad = ref(personalizador.setDisenioHorizontal ? 0 : 0);
+
 function cajaDeBusqueda() {
   mostrarBuscar.value = !mostrarBuscar.value;
 }
