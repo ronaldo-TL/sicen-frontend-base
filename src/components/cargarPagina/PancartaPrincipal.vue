@@ -17,7 +17,12 @@
                   class="text-secondary"/>
                   Sistema Centralizador de Sistemas
               </span>
-
+              <h1
+                class="bannerTitle pt-5 font-weight-bold"
+                data-aos="fade-up"
+                data-aos-duration="500">
+                
+              </h1>
             </div>
         </v-col>
       </v-row>
