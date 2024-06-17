@@ -9,6 +9,7 @@ type temaTypes = {
     success?:         string;
     accent?:          string;
     warning?:         string;
+    dark?:            string;
     error?:           string;
     lightprimary?:    string;
     lightsecondary?:  string;

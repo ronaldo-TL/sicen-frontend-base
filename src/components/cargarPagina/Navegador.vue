@@ -10,13 +10,13 @@
   <v-switch
     v-model="isDarkTheme"
     hide-details
-    color="success"
+    color="primary"
   ></v-switch>
  
 
 
   <v-btn 
-    class="custom-hover-primary bg-success text-white" 
+    class="custom-hover-primary bg-primary text-white" 
     flat 
     href="/auth/login"
     ><span class="text-white">Ingresar</span>

@@ -14,7 +14,7 @@
                 data-aos-duration="400">
                 <RocketIcon 
                   size="18"
-                  class="text-success"/>
+                  class="text-primary"/>
                   Sistema Centralizador de Sistemas
               </span>
               <h1
@@ -22,7 +22,7 @@
                 data-aos="fade-up"
                 data-aos-duration="500">
                 Centraliza y simplifica: 
-                <span class="text-success">Integra todos los sistemas</span> 
+                <span class="text-primary">Integra todos los sistemas</span> 
                 Punto de control
               </h1>
               <p 
@@ -30,7 +30,7 @@
               data-aos="fade-up" 
               data-aos-duration="800">
                 Sistema moderno desarrollado por 
-                <span class="text-success"><b>Ronald Titirico</b></span> 
+                <span class="text-primary"><b>Ronald Titirico</b></span> 
                 <!-- con temas personalizables y una interfaz de usuario amigable. -->
               </p>
               <div 
@@ -67,10 +67,7 @@
                     <!-- <img src="@/assets/images/landingpage/bannerimg2.svg" /> -->
                     <LogosNavegador/>
                   </div>
-                  <div class="animateDown">
-                    <!-- <img src="@/assets/images/landingpage/bannerimg2.svg" /> -->
-                    <LogosNavegador/>
-                  </div>
+               
                 </div>
               </div>
             </div>
